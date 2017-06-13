@@ -39,7 +39,7 @@ public class ResultPrinter {
 
 	public void print( Stream<String> result ) {
 		
-		out.print( outputFormatter.formatResult(result) );
+		out.println( Thread.currentThread().getName() + " - " + outputFormatter.formatResult(result) );
 	}
 
 }
